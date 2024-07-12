@@ -1,0 +1,9 @@
+.showBooks {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 1rem;
+  background: rgb(255, 32, 188);
+  color: #fff;
+  max-width: 25rem;
+  margin: 1rem;
+}

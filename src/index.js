@@ -1,6 +1,6 @@
 import React from "react"
-import ReactDOM from "react-dom"
-
+import ReactDOM from "react-dom/client"
+import App from "./App"
 // get a reference to the div with id root
 
 const element = document.getElementById("root")
@@ -10,12 +10,5 @@ const root = ReactDOM.createRoot(element)
 
 //create a component
 
-function App() {
-  return (
-    <div>
-      <h2>This is a component</h2>
-    </div>
-  )
-}
 //shoe the component of the screen
 root.render(<App />)

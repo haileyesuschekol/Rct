@@ -1,0 +1,22 @@
+.createBook {
+  padding: 1rem 1rem;
+  background: #ff20bc;
+  color: #fff;
+  max-width: 25rem;
+  margin: 1rem;
+}
+
+.inputField {
+  padding: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  margin-left: 0.2rem;
+}
+
+.btn:hover {
+  background-color: #ff20bc;
+  border: 1px solid #fff;
+  color: #fff;
+}
