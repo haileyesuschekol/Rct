@@ -1,6 +1,7 @@
 import { useState } from "react"
 import BookCreate from "./components/BookCreate"
 import BookList from "./components/BookList"
+import Demo from "./components/Demo"
 
 const App = () => {
   const [book, setBook] = useState([])
@@ -37,6 +38,7 @@ const App = () => {
 
   return (
     <div>
+      <Demo />
       <BookCreate handleCreate={handleCreate} />
       <BookList
         book={book}
