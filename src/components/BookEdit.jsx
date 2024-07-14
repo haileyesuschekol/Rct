@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import BookContext from "../context/book"
 
-const BookEdit = ({ handleEdit, book, handleVisible, handleToggle }) => {
+const BookEdit = ({ book, handleVisible, handleToggle }) => {
+  const { handleEdit } = useContext(BookContext)
   const [edit, setEdit] = useState("")
 
   const handleChange = (event) => {

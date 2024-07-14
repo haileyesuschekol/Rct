@@ -1,13 +1,15 @@
 import BookShow from "./BookShow"
-
-const BookList = ({ book, handleEdit, handleDelete }) => {
+import BookContext from "../context/book"
+import { useContext } from "react"
+const BookList = () => {
+  const { book } = useContext(BookContext)
   const renderBook = book.map((book) => {
     return (
       <BookShow
         key={book.id}
         book={book}
-        handleEdit={handleEdit}
-        handleDelete={handleDelete}
+        // handleEdit={handleEdit}
+        // handleDelete={handleDelete}
       />
     )
   })

@@ -1,7 +1,9 @@
 import BookEdit from "./BookEdit"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import "./BookShow.css"
-const BookShow = ({ book, handleEdit, handleDelete }) => {
+import BookContext from "../context/book"
+const BookShow = ({ book }) => {
+  const { handleDelete } = useContext(BookContext)
   const [visible, setVisible] = useState(false)
 
   const handleVisible = () => {
@@ -20,7 +22,7 @@ const BookShow = ({ book, handleEdit, handleDelete }) => {
     content = (
       <BookEdit
         book={book}
-        handleEdit={handleEdit}
+        // handleEdit={handleEdit}
         handleToggle={handleToggle}
       />
     )
